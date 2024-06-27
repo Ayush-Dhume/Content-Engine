@@ -1,0 +1,13 @@
+Document Processing:
+get_pdf_text(pdf_docs): Extracts text from the uploaded PDF documents.
+get_text_chunks(text): Splits the extracted text into manageable chunks for embedding generation.
+
+Vector Store Ingestion:
+get_vector_store(text_chunks): Generates embeddings for the text chunks using GoogleGenerativeAI and stores them in a FAISS vector store.
+
+Query Engine Development:
+get_conversational_chain(): Sets up a conversational chain using GoogleGenerativeAI to answer questions based on the context.
+user_input(user_question): Handles user input and generates a response using the conversational chain.
+
+Streamlit Interface:
+The main function sets up the Streamlit interface where users can upload PDF files, process them, and ask questions based on the processed data.
